@@ -1,0 +1,1 @@
+AI asistent skvelý pomocník
