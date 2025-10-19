@@ -44,7 +44,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("🚀 Trading AI Assistant — Beta 3.1")
-st.markdown("Interaktivní graf + ensemble predikce (EMA, RSI, Slope, Linear Regression).  
+st.markdown("Interaktivní graf + ensemble predikce (EMA, RSI, Slope, Linear Regression).") 
 **Asistent — ne investiční rada.**")
 
 # -------------------------
