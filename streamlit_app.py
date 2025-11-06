@@ -72,9 +72,9 @@ fig.update_layout(
 # ---- Výsledek ----
 st.subheader("🧠 Výsledek AI analýzy")
 
-# Opravený f-string
-st.markdown(f"**Predikovaná cena za 7 dní:** `{ensemble_pred:.2f} USD`")
-st.markdown(f"**Jistota modelu:** `{confidence:.1f}%`")
+# Opravený výpis bez kolize Markdownu a f-stringu
+st.markdown("**Predikovaná cena za 7 dní:** " + str(round(ensemble_pred, 2)) + " USD")
+st.markdown("**Jistota modelu:** " + str(round(confidence, 1)) + "%")
 
 if confidence > 70:
     st.success("📈 Signál: Možný růst (kupní příležitost)")
