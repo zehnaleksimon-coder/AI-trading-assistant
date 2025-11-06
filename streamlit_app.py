@@ -69,13 +69,12 @@ fig.update_layout(
     height=600,
 )
 
-# ---- Zobrazení grafu ----
-st.plotly_chart(fig, use_container_width=True)
-
 # ---- Výsledek ----
 st.subheader("🧠 Výsledek AI analýzy")
-st.write(f"Predikovaná cena za 7 dní: **{ensemble_pred:.2f} USD**")
-st.write(f"Jistota modelu: **{confidence:.1f}%**")
+
+# Opravený f-string
+st.markdown(f"**Predikovaná cena za 7 dní:** `{ensemble_pred:.2f} USD`")
+st.markdown(f"**Jistota modelu:** `{confidence:.1f}%`")
 
 if confidence > 70:
     st.success("📈 Signál: Možný růst (kupní příležitost)")
